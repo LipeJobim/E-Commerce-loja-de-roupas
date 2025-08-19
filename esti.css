@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e6e6e6;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+}
+
+/* ===================
+   Produtos (Cards)
+=================== */
+.col-sm-3 {
+    padding: 15px;
+}
+
+.produto-img {
+    width: 100%;           /* Ocupa toda largura do card */
+    height: auto;          /* Mantém proporção natural da imagem */
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+    object-fit: contain;   /* Evita distorção */
+}
+
+.produto-img:hover {
+    transform: scale(1.03);
+}
+
+.col-sm-3 h3, .col-sm-3 h4 {
+    margin: 10px 0;
+}
+
+.btn {
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* ================
+   Rodapé
+================= */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.rodape-linha {
+    margin: 0 auto;
+}
+
+.rodape-col {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer .menu {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+footer .menu li a:hover {
+    color: #fdeb00;
+}
+
+#imgfooter {
+    width: 80px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+footer .fa {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+footer .fa:hover {
+    color: #fdeb00;
+    transform: scale(1.2);
+}
+
+.copyright {
+    background-color: #fff;
+    color: #000;
+    border-top: 2px solid #fff;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ===================
+   Responsividade
+=================== */
+@media (max-width: 768px) {
+    footer .menu {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .col-sm-3 {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .produto-img {
+        width: 90%;   /* Deixa a imagem menor em telas pequenas */
+        margin: auto;
+        display: block;
+    }
+
+    #imgfooter {
+        width: 60px;
+    }
+
+    footer .fa {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+.destaque-imagem img {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+/* ===================
+   Carrossel
+
+.owl-carousel .item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.owl-carousel .produto-img {
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 15px 0;
+}
+
+.carousel-item {
+  flex: 0 0 25%; 
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.carousel-btn.prev {
+  left: 5px;
+}
+
+.carousel-btn.next {
+  right: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 50%;
+  }
+
+  .carousel-btn {
+    display: none;
+  }
+}
+=================== */
