@@ -9,8 +9,8 @@ O sistema foi projetado para oferecer uma experiência de compra intuitiva, incl
 - Integração com banco de dados MySQL
 ## 📸 Preview
 
-![Home](imgs/bellaB.png)
-![Login](imgs/1.png)
-![Home](imgs/2.png)
-![Login](imgs/3.png)
-![Home](imgs/mobile.png)
+![Home](imgs/belaB.jpeg)
+![1](imgs/1.png)
+![2](imgs/2.png)
+![3](imgs/3.png)
+![Home](imgs/mobile.jpeg)
